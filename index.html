@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ibsenphrase Generator</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <button id="language-toggle" data-en="NO" data-no="EN">EN</button>
+    <div id="container">
+        <h1 data-en="Ibsenphrase" data-no="Ibsenfrase"></h1>
+
+
+
+        <div id="main">
+            <p data-en="Generate a <a href='https://en.wikipedia.org/wiki/Diceware'>diceware</a> passphrase with
+                words from the original plays by Henrik Ibsen. The passphrase is generated locally in your browser."
+                data-no="Generer en <a href='https://en.wikipedia.org/wiki/Diceware'>diceware</a>-passfrase med ord fra Henrik Ibsens originale stykker. Passfrasen genereres lokalt i nettleseren din.">
+            </p>
+
+
+            <div id="frame">
+                <label>
+                    <span data-en="Number of words:" data-no="Antall ord:">
+                    </span>
+                    <span id="wordCountDisplay">7</span>
+                    <input type="range" id="wordCount" min="3" max="15" value="7">
+                </label>
+
+                <button id="generate" data-en="Generate Ibsenphrase" data-no="Generer Ibsenfrase">
+                </button>
+
+                <div id="output"></div>
+
+                <label>
+                    <input type="checkbox" id="capitalize"> <span data-en="Capitalize" data-no="Versaler"></span>
+                </label>
+
+                <label>
+                    <input type="checkbox" id="useSpaces" checked> <span data-en="Spaces" data-no="Mellomrom">
+                    </span>
+                </label>
+            </div>
+        </div>
+
+
+
+
+        <div id="footer">
+            <div id="colophon">
+                <p data-en="Based on <a href='https://github.com/sigvei/ibsenphrase'>Ibsenphrase by Sigve Indregard</a>."
+                    data-no="Basert på <a href='https://github.com/sigvei/ibsenphrase'>Ibsenphrase av Sigve Indregard</a>.">
+                </p>
+                <p data-en="The logo uses <a
+                    href='https://fonts.googleblog.com/2024/06/playwrite-is-new-font-superfamily-for.html'>Playwrite</a> (the Austrian variant), an open typeface which bears some resemblance to Ibsen’s signature."
+                    data-no="Logoen er satt i <a
+                    href='https://fonts.googleblog.com/2024/06/playwrite-is-new-font-superfamily-for.html'>Playwrite</a>
+                (den østerrikske varianten), et åpent typesnitt som kanskje minner litt om Ibsens signatur."></p>
+
+                <p data-en="The body text is typeset with <a href='https://www.fairetype.com/fonts/octave'>Octave</a>, a French Elzevir oldstyle, according to <a
+                    href='https://www.typografi.org/ibsen/smukke_typer.html#:~:text=ENGLISH%20SUMMARY'>Ibsen’s own
+                    typographic preferences</a>."
+                    data-no="Brødteksten er satt i <a href='https://www.fairetype.com/fonts/octave'>Octave</a>, en
+                renessanseantikva som følger den franske Elzevir-tradisjonen, i tråd med <a
+                    href='https://www.typografi.org/ibsen/smukke_typer.html'>Ibsens egne typografiske preferanser</a>."></a>
+                </p>
+            </div>
+            <ul>
+                <li><a href="https://github.com/tobiasvl/ibsen">GitHub</a></li>
+                <li><a href="#" id="toggleLink" data-en="Colophon" data-no="Kolofon"></a></li>
+            </ul>
+        </div>
+
+    </div>
+    <script src="ibsenfrase.js"></script>
+    <script src="assets/language.js"></script>
+    <script>
+        // Display colophon on click
+        const link = document.getElementById("toggleLink");
+        const div = document.getElementById("colophon");
+
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            div.classList.toggle("show");
+        });
+    </script>
+</body>
+
+</html>
