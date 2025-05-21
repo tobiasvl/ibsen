@@ -16,12 +16,42 @@ body {
     font-weight: 300;
     letter-spacing: 0.05em;
     line-height: 1.5;
-    font-size: x-large;
     font-optical-sizing: auto;
     background-image: url("background.png");
     background-size: cover;
     color: #090602;
     overflow: hidden;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        font-size: xxx-large;
+    }
+
+    #colophon {
+        font-size: xx-large;
+    }
+
+    #container {
+        background: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        font-size: xx-large;
+    }
+
+    #colophon {
+        font-size: x-large;
+    }
+
+    #container {
+        background-image: url("ibsen.png");
+        background-position-y: bottom;
+        background-position-x: right;
+        background-repeat: no-repeat;
+    }
 }
 
 #container {
@@ -30,10 +60,6 @@ body {
     width: 100vw;
     overflow: hidden;
     align-content: space-between;
-    background-image: url("ibsen.png");
-    background-position-y: bottom;
-    background-position-x: right;
-    background-repeat: no-repeat;
 
 }
 
@@ -59,6 +85,7 @@ label {
 
 button {
     font-family: "Faire Octave", serif !important;
+    font-size: xx-large;
 }
 
 #output {
@@ -119,4 +146,9 @@ button {
     top: 20px;
     font-size: x-large;
     width: 5rem;
+}
+
+input[type="checkbox"] {
+    width: 1.8rem;
+    height: 1.8rem;
 }
