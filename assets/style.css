@@ -24,7 +24,9 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-    body {
+
+    body,
+    button {
         font-size: xxx-large;
     }
 
@@ -35,10 +37,16 @@ body {
     #container {
         background: none;
     }
+
+    input[type="range"] {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1000px) {
-    body {
+
+    body,
+    button {
         font-size: xx-large;
     }
 
@@ -51,6 +59,10 @@ body {
         background-position-y: bottom;
         background-position-x: right;
         background-repeat: no-repeat;
+    }
+
+    input[type="range"] {
+        width: 50%;
     }
 }
 
@@ -77,6 +89,7 @@ p {
 
 a {
     color: #3e2f1b;
+    text-decoration-thickness: from-font;
 }
 
 label {
@@ -85,7 +98,6 @@ label {
 
 button {
     font-family: "Faire Octave", serif !important;
-    font-size: xx-large;
 }
 
 #output {
@@ -102,6 +114,9 @@ button {
 
 #wordCountDisplay {
     font-variant-numeric: tabular-nums;
+    display: inline-block;
+    width: 1em;
+    text-align: right;
 }
 
 #footer {
@@ -128,8 +143,12 @@ button {
     max-height: 0;
     overflow: hidden;
     transition: opacity 0.5s ease, max-height 0.5s ease;
-    margin-top: 10px;
+    max-width: 1000px;
+    margin: auto auto;
+    padding-left: 20px;
+    padding-right: 20px;
     pointer-events: none;
+    background-color: #f6eed9;
     /* Prevent interaction when hidden */
 }
 
@@ -144,11 +163,13 @@ button {
     position: absolute;
     right: 20px;
     top: 20px;
-    font-size: x-large;
-    width: 5rem;
 }
 
 input[type="checkbox"] {
     width: 1.8rem;
     height: 1.8rem;
+}
+
+input[type="range"] {
+    margin-bottom: 5em;
 }
