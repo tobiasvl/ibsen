@@ -27,11 +27,11 @@ body {
 
     body,
     button {
-        font-size: xxx-large;
+        font-size: 3vh;
     }
 
     #colophon {
-        font-size: xx-large;
+        font-size: 2vh;
     }
 
     #container {
@@ -47,11 +47,11 @@ body {
 
     body,
     button {
-        font-size: xx-large;
+        font-size: 2vh;
     }
 
     #colophon {
-        font-size: x-large;
+        font-size: 1vh;
     }
 
     #container {
@@ -59,6 +59,7 @@ body {
         background-position-y: bottom;
         background-position-x: right;
         background-repeat: no-repeat;
+        background-size: 20%;
     }
 
     input[type="range"] {
