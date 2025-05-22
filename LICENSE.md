@@ -1,7 +1,11 @@
 The MIT License (MIT)
 
 Copyright (c) 2025 Tobias V. I. Langhoff
+
 Copyright (c) 2016 Sigve Indregard (original implementation)
+
+The Octave font is (c) 2025 Faire Type Foundry, used under commercial license,
+and is not covered under this MIT license.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
