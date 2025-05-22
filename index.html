@@ -17,7 +17,7 @@
         <div id="main">
             <p data-en="Generate a <a href='https://en.wikipedia.org/wiki/Diceware'>diceware</a> passphrase with
                 words from the original plays by Henrik Ibsen. The passphrase is generated locally in your browser."
-                data-no="Generer en <a href='https://en.wikipedia.org/wiki/Diceware'>diceware</a>-passfrase med ord fra Henrik Ibsens originale stykker. Passfrasen genereres lokalt i nettleseren din.">
+                data-no="Generer en <a href='https://en.wikipedia.org/wiki/Diceware'>diceware</a>-passfrase med ord fra Henrik Ibsens originale stykker. Pass&shy;frasen genereres lokalt i nett&shy;leseren din.">
             </p>
 
 
@@ -27,7 +27,23 @@
                     </span>
                     <span id="wordCountDisplay">7</span>
                 </div>
-                <input type="range" id="wordCount" min="3" max="15" value="7">
+
+                <input type="range" id="wordCount" min="3" max="15" value="7" list="wordCountList">
+                <datalist id="wordCountList">
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                </datalist>
 
                 <div>
                     <button id="generate" data-en="Generate Ibsenphrase" data-no="Generer Ibsenfrase">
@@ -59,14 +75,15 @@
                     href='https://fonts.googleblog.com/2024/06/playwrite-is-new-font-superfamily-for.html'>Playwrite</a> (the Austrian variant), an open typeface which bears some resemblance to Ibsen’s signature."
                     data-no="Logoen er satt i <a
                     href='https://fonts.googleblog.com/2024/06/playwrite-is-new-font-superfamily-for.html'>Playwrite</a>
-                (den østerrikske varianten), et åpent typesnitt som kanskje minner litt om Ibsens signatur."></p>
+                (den øster&shy;rikske varianten), et åpent type&shy;snitt som kanskje minner litt om Ibsens signatur.">
+                </p>
 
                 <p data-en="The body text is typeset with <a href='https://www.fairetype.com/fonts/octave'>Octave</a>, a French Elzevir oldstyle, according to <a
                     href='https://www.typografi.org/ibsen/smukke_typer.html#:~:text=ENGLISH%20SUMMARY'>Ibsen’s own
                     typographic preferences</a>."
-                    data-no="Brødteksten er satt i <a href='https://www.fairetype.com/fonts/octave'>Octave</a>, en
-                renessanseantikva som følger den franske Elzevir-tradisjonen, i tråd med <a
-                    href='https://www.typografi.org/ibsen/smukke_typer.html'>Ibsens egne typografiske preferanser</a>."></a>
+                    data-no="Brød&shy;teksten er satt i <a href='https://www.fairetype.com/fonts/octave'>Octave</a>, en
+                renessanse&shy;antikva som følger den franske Elzevir-tradisjonen, i tråd med <a
+                    href='https://www.typografi.org/ibsen/smukke_typer.html'>Ibsens egne typo&shy;grafiske preferanser</a>."></a>
                 </p>
             </div>
             <ul>
